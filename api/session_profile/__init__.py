@@ -7,9 +7,9 @@ from flask import Blueprint
 from flask_restful import Api
 from api.session_profile.views import InfoView, AvatarView, PasswordView
 
-profile_blu = Blueprint('profile', __name__, url_prefix='/session_profile')
+sprofile_blu = Blueprint('profile', __name__, url_prefix='/session_profile')
 
-api = Api(profile_blu)
+api = Api(sprofile_blu)
 
 api.add_resource(InfoView, '/info')
 api.add_resource(PasswordView, '/password')

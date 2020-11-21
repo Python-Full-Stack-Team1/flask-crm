@@ -6,9 +6,9 @@ from flask import Blueprint
 from flask_restful import Api
 from api.passport.views import LoginView, RegisterView, ImageCodeView
 
-auth_blu = Blueprint('auth', __name__, url_prefix='/passport')
+pass_blu = Blueprint('auth', __name__, url_prefix='/passport')
 
-api = Api(auth_blu)
+api = Api(pass_blu)
 api.add_resource(LoginView, '/login')
 api.add_resource(RegisterView, '/register')
 api.add_resource(ImageCodeView, '/imagecode')

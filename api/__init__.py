@@ -38,4 +38,10 @@ def create_app(config_name):
     from api.profile import profile_blu
     app.register_blueprint(profile_blu)
 
+    from api.passport import pass_blu
+    app.register_blueprint(pass_blu)
+
+    from api.session_profile import sprofile_blu
+    app.register_blueprint(sprofile_blu)
+
     return app
