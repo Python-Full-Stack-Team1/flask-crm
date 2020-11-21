@@ -133,3 +133,10 @@ INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:12] "[33mPOST /auth/imgc
 INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:19] "[37mPOST /auth/imagecode?cur_id=1 HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:35] "[37mPOST /profile/info HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:38] "[37mPOST /profile/avatar?avatar=/Users/h0rs3/Downloads/IMG_4113.JPG HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 22:45:59] "[31m[1mPOST /auth/register?mobile=18782171398&password=123456&img_code_id=1&img_code=arsx&nickname=mmm4 HTTP/1.1[0m" 400 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 22:53:53] "[31m[1mPOST /auth/register?mobile=18782171398&password=123456&img_code_id=1&img_code=arsx&nickname=mmm4 HTTP/1.1[0m" 400 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 22:56:12] "[37mPOST /auth/register?mobile=18782171398&password=123456&img_code_id=1&img_code=arsx&nickname=mmm4 HTTP/1.1[0m" 200 -

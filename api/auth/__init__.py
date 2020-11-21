@@ -4,11 +4,9 @@
 # @Software: PyCharm
 from flask import Blueprint
 from flask_restful import Api
-from api.auth.views import LoginView, RegisterView, ImageCodeView
+from api.auth.views import LoginView
 
 auth_blu = Blueprint('auth', __name__, url_prefix='/auth')
 
 api = Api(auth_blu)
 api.add_resource(LoginView, '/login')
-api.add_resource(RegisterView, '/register')
-api.add_resource(ImageCodeView, '/imagecode')
