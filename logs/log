@@ -1,0 +1,135 @@
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on /passport/login [POST]
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1975 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:10:16] "[35m[1mPOST /passport/login?mobile=18782171394&password=123456&img_code_id=1&img_code=arsx HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask/app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/Users/h0rs3/Work/学习/Python/python全栈/FlaskProject/userauth/venv/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:10:21] "[35m[1mPOST /auth/login?mobile=18782171394&password=123456&img_code_id=1&img_code=arsx HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:11:58] "[37mPOST /auth/login?mobile=18782171394&password=123456&img_code_id=1&img_code=arsx HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:05] "[37mPOST /auth/register?mobile=18782171398&password=123456&img_code_id=1&img_code=arsx&nickname=mmm4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:12] "[33mPOST /auth/imgcode?cur_id=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:19] "[37mPOST /auth/imagecode?cur_id=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:35] "[37mPOST /profile/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Nov/2020 21:12:38] "[37mPOST /profile/avatar?avatar=/Users/h0rs3/Downloads/IMG_4113.JPG HTTP/1.1[0m" 200 -
